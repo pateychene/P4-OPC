@@ -26,7 +26,9 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
-
+.center-block{
+    width: 30%;
+}
 .bloc {
     width: 100%;
     clear: both;
@@ -362,7 +364,7 @@ a:hover {
     z-index: 2;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -767,7 +769,7 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+   
 }
 
 .bgc-atomic-tangerine {
@@ -848,13 +850,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -922,6 +924,10 @@ h4 {
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        
     }
     .nav > li {
         margin-top: 0;
